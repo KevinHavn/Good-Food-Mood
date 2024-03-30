@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<style>
+			@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+			@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+		</style>
 		<meta charset="UTF-8" />
 		<meta
 			name="viewport"
@@ -8,10 +12,58 @@
 			name="description"
 			content="The home page of Good Food Mood, where you can browse for food healthy to both mind and body!" />
 		<title>Good Food Mood | Home</title>
-		<link href="css/styles.css" alt="Stylesheet" />
+		<link href="css/styles.css" rel="Stylesheet" />
 	</head>
 	<body>
-		<header></header>
-		<main><h1>Hello, this is my test for my website.</h1></main>
+		<header>
+			<nav>
+				<ul class="flex row justify-space-around padding-175">
+					<li>Home</li>
+					<li>About Us</li>
+					<li>Contact Us</li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<div class="home grid justify-center">
+				<div class="CarouselContainer flex justify-center">
+					<div class="Carousel flex column">
+						<button class="carouselPrev">&lt;</button>
+						<div class="flex row justify-space-around">
+							<div class="carouselcard flex column">
+								<img src="images/lasagna.png" alt="lasagna" />
+								<h1>Lasagna</h1>
+							</div>
+							<div class="carouselcard flex column">
+								<img src="images/spaghetti.jpg" alt="spaghetti" />
+								<h1>Spaghetti</h1>
+							</div>
+							<div class="carouselcard flex column">
+								<img src="images/salad.jpg" alt="salad" />
+								<h1>Salad</h1>
+							</div>
+						</div>
+						<button class="carouselNext">&gt;</button>
+					</div>
+				</div>
+				<div class="card more flex column justify-center maxwidth-50">
+					<h1 class="text-center">Interested in more?</h1>
+					<p class="text-center">
+						Want to see more of our healthy recipes?
+						<br />
+						<a href="posts.html">Click Here!</a>
+					</p>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div>
+				<ul class="flex row justify-space-around">
+					<li><a href="about.html">About Us</a></li>
+					<li><p>Created by Kevin Havn</p></li>
+					<li><a href="contact.html">Contact Us</a></li>
+				</ul>
+			</div>
+		</footer>
 	</body>
 </html>
